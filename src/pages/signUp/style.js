@@ -17,8 +17,7 @@ S.Header = styled.h2`
 `;
 
 S.SignLink = styled(Link)`
-	width: 100%;
-	text-align: end;
+	margin: 0 0 0 auto;
 	padding-right: 3rem;
 `;
 
@@ -28,6 +27,13 @@ S.Description = styled.p`
 	margin: 1rem auto;
 	padding: 0;
 	/* text-align: center; */
+`;
+
+S.AlertValid = styled.div`
+	width: 80%;
+	margin: 0 auto;
+	color: ${(props)=> props.color ? props.color : "black"};
+	
 `;
 
 export default S;
